@@ -30,6 +30,12 @@ namespace Exercise05
                                    double height)
         {
             //TODO
+            Polygon triangle = new Polygon();
+            triangle.Width = width;
+            triangle.Height = height;
+            triangle.Stroke = brushToUse;
+            triangle.Margin = new Thickness(xPlace, 0, yPlace, 0);
+            drawingArea.Children.Add(triangle);
         }
 
 

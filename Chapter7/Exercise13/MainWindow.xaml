@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise13"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="300">
     <Grid>
-        
+        <Label Content="Nettoprijs:" Name="_priceLabel" HorizontalAlignment="Left" Height="29" Margin="27,42,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox Name="_priceTextBox" HorizontalAlignment="Left" Height="29" Margin="120,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
+        <CheckBox Name="_checkBox" Content="Verlaagd tarief" HorizontalAlignment="Left" Height="21" Margin="120,91,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label Name="_btwLabel" Content="Btw:" HorizontalAlignment="Left" Height="31" Margin="27,136,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox IsReadOnly="True" Name="_btwTextBox" Background="LightGray" HorizontalAlignment="Left" Height="31" Margin="120,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
+        <Label Name="_totalLabel" Content="Totaal:" HorizontalAlignment="Left" Height="26" Margin="27,201,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox IsReadOnly="True" Name="_totalTextBox" Background="LightGray" HorizontalAlignment="Left" Height="26" Margin="120,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117"/>
+        <Button Name="_button" Content="bereken" HorizontalAlignment="Left" Height="24" Margin="150,259,0,0" VerticalAlignment="Top" Width="87" Click="_button_Click"/>
+
     </Grid>
 </Window>

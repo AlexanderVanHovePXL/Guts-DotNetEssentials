@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise14"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="300">
     <Grid>
-      
+        <Label Content="Naam:" HorizontalAlignment="Left" Height="27" Margin="28,42,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox Name="firstnameTextBox" HorizontalAlignment="Left" Height="27" Margin="127,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Voornaam:" HorizontalAlignment="Left" Height="31" Margin="28,93,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox Name="lastnameTextBox" HorizontalAlignment="Left" Height="31" Margin="127,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <GroupBox Name="_genderGroupBox" HorizontalAlignment="Left" Height="60" Header="Geslacht" Margin="28,129,0,0" VerticalAlignment="Top" Width="240">
+            <Grid>
+                <RadioButton Name="maleRadioButton" Content="Man" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <RadioButton Name="femaleRadioButton" Content="Vrouw" HorizontalAlignment="Left" Margin="102,0,0,0" VerticalAlignment="Center"/>
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Name="_ageGroupBox" HorizontalAlignment="Left" Height="106" Header="Leeftijd" Margin="28,189,0,0" VerticalAlignment="Top" Width="240">
+            <Grid Height="103">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="31*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton Name="age18to30" Content="tussen 18 en 30" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top"/>
+                <RadioButton Name="age30to45" Content="tussen 30 en 45" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top"/>
+                <RadioButton Name="age45to60" Content="tussen 45 en 60" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top"/>
+                <RadioButton Name="ageover60" Content="ouder dan 60" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top"/>
+
+            </Grid>
+        </GroupBox>
+        <Button Name="_button" Content="bereken" HorizontalAlignment="Left" Height="24" Margin="150,300,0,0" VerticalAlignment="Top" Width="118" Click="_button_Click"/>
+
     </Grid>
 </Window>

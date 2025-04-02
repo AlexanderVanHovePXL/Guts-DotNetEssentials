@@ -7,5 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="325" Width="305">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="54*"/>
+        </Grid.RowDefinitions>
+        <Button Name="_theButton" Content="The Button" HorizontalAlignment="Center" Height="20" Margin="0,132,0,0" VerticalAlignment="Top" Width="81" Click="_theButton_Click" Grid.Row="1"/>
+        <TextBox Name="randomTextBox" IsEnabled="False" TextAlignment="Center" FontSize="20" HorizontalAlignment="Center" Height="64" Margin="0,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254"/>
+        <TextBox Name="_sumTextBox" FontSize="20" IsEnabled="False" HorizontalAlignment="Center" TextAlignment="Center" Height="56" Margin="0,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Grid.RowSpan="2"/>
+        <TextBox Name="_averageTextBox" FontSize="20" IsEnabled="False" HorizontalAlignment="Center" Height="56" Margin="0,25,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="254"/>
     </Grid>
 </Window>

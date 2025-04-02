@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-       
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="183,53,0,0" VerticalAlignment="Top" Width="143"/>
+        <Canvas Name="paperCanvas" HorizontalAlignment="Left" Height="154" Margin="77,125,0,0" VerticalAlignment="Top" Width="385"/>
+
     </Grid>
 </Window>

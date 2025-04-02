@@ -8,6 +8,13 @@
         Title="MainWindow" Height="350" Width="525"
         AutomationProperties.AutomationId="Window_13_1">
     <Grid>
-        
+        <ListBox Name="myListBox" HorizontalAlignment="Left" Height="110" Margin="303,87,0,0" VerticalAlignment="Top" Width="153" SelectionChanged="mylistBox_MouseDoubleClick" >
+            <ListBoxItem Content="item 1"></ListBoxItem>
+            <ListBoxItem Content="item 2"></ListBoxItem>
+            <ListBoxItem Content="item 3"></ListBoxItem>
+            <ListBoxItem Content="item 4"></ListBoxItem>
+            <ListBoxItem Content="item 5"></ListBoxItem>
+        </ListBox>
+
     </Grid>
 </Window>

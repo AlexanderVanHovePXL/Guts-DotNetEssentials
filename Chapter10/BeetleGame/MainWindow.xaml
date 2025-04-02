@@ -9,18 +9,35 @@
         Title="ExtraoefeningH10" Height="650" Width="950">
 
     <Grid>
-        
+
         <Label Content="Speed cm/s" HorizontalAlignment="Left" Height="24" Margin="37,68,0,0" VerticalAlignment="Top" Width="93"/>
         <Label Name="speedLabel" Content="0.5" HorizontalAlignment="Left" Height="24" Margin="462,64,0,0" VerticalAlignment="Top" Width="44"/>
         <Label Content="Size in pixels" HorizontalAlignment="Left" Margin="37,146,0,0" VerticalAlignment="Top"/>
-        
+
         <Label Content="10" HorizontalAlignment="Left" 
-               Name="sizeLabel" Margin="470,138,0,0" VerticalAlignment="Top"/>
+               Name="sizeLabel" Margin="462,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="22">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
         <Canvas HorizontalAlignment="Left" Height="356" 
                 Name ="paperCanvas" Background ="LightGray" Margin="47,218,0,0" VerticalAlignment="Top" Width="536"/>
-        
 
-        <Label Name="messageLabel" Content="" HorizontalAlignment="Left" Height="61" Margin="616,513,0,0" VerticalAlignment="Top" Width="218"/>
+
+        <Label Name="messageLabel" FontSize="15" HorizontalAlignment="Left" Height="61" Margin="616,513,0,0" VerticalAlignment="Top" Width="218"/>
+        <Slider Name="_speedSlider" Minimum="0.5" Maximum="10" HorizontalAlignment="Left" Height="20" Margin="130,72,0,0" VerticalAlignment="Top" Width="327" ValueChanged="speedSliderChange"/>
+        <Slider Name="_sizeSlider" Minimum="10" Maximum="20" TickFrequency="2" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Height="26" Margin="130,146,0,0" VerticalAlignment="Top" Width="327" ValueChanged="sliderPixelChange"/>
+        <Button Name="_startButton" Content="Start" HorizontalAlignment="Left" Margin="744,82,0,0" VerticalAlignment="Top" Height="23" Width="45" Click="startButton"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Height="26" Margin="744,128,0,0" VerticalAlignment="Top" Width="45" Click="resetButton"/>
+        <Button Name="upButton" PreviewMouseDown="movementButtonDown" Content="Up" HorizontalAlignment="Left" Height="42" Margin="713,244,0,0" VerticalAlignment="Top" Width="95"/>
+        <Button Name="leftButton" PreviewMouseDown="movementButtonDown" Content="Left" HorizontalAlignment="Left" Height="45" Margin="616,317,0,0" VerticalAlignment="Top" Width="96"/>
+        <Button Name="rightButton" PreviewMouseDown="movementButtonDown" Content="Right" HorizontalAlignment="Left" Height="45" Margin="808,317,0,0" VerticalAlignment="Top" Width="104"/>
+        <Button Name="downButton" PreviewMouseDown="movementButtonDown" Content="Down" HorizontalAlignment="Left" Height="44" Margin="712,396,0,0" VerticalAlignment="Top" Width="96"/>
 
 
     </Grid>

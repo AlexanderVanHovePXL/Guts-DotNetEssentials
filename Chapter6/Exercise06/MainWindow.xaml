@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise06"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="600">
     <Grid>
+        <Canvas Name="paperCanvas" HorizontalAlignment="Center" Height="206" Margin="0,55,0,0" VerticalAlignment="Top" Width="600">
+            <Rectangle Height="60" Fill="HotPink" MaxWidth="600" Name="_minutesRectangle" Stroke="Black" Canvas.Top="27" Width="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Rectangle Height="60" Fill="HotPink" MaxWidth="600" Name="_secondsRectangle"  Stroke="Black" Canvas.Top="113" Width="0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
 
     </Grid>
 </Window>

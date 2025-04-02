@@ -6,4 +6,5 @@
         xmlns:local="clr-namespace:Exercise04"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Canvas x:Name="canvas" Background="LightGray" HorizontalAlignment="Left" Height="269" Margin="35,48,0,0" VerticalAlignment="Top" Width="450"/>
 </Window>
